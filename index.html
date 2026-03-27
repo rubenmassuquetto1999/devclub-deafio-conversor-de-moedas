@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Conversor de Moedas</title>
+
+    <link rel="shortcut icon" href="./assets/bitcoin.png" type="image/png">
+
+</head>
+
+<body>
+    <header>
+        <h1>Conversor de Moedas</h1>
+        <img src="./assets/logo.gif" alt="logo-do-conversor-de-moedas" class="imagem-logo">
+    </header>
+
+    <main>
+        <label>
+            Converter <b>de</b>:
+            <select class="currency-select-from">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para</b>:
+            <select class="currency-select-to">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+            </select>
+        </label>
+
+        <label>
+            <b>Valor:</b>
+            <input type="text" inputmode="numeric" placeholder="R$ 10.000,00">
+            <span class="error-message">Por favor, insira um valor para converter!</span>
+        </label>
+
+        <button class="convertButton">Converter</button>
+
+        <section class="result-section">
+            <div class="currency-box">
+                <img src="./assets/real.png" alt="moeda-a-ser-convertida" class="imagem-moeda">
+                <p class="currency">Real Brasileiro</p>
+                <p class="currency-value-to-convert">R$ 10.000,00</p>
+            </div>
+
+            <img src="./assets/arrow.png" alt="seta-de-conversao" class="imagem-seta">
+
+            <div class="currency-box">
+                <img src="./assets/dolar.png" alt="moeda-convertida" class="imagem-moeda">
+                <p class="currency" id="currency-name">Dólar Americano</p>
+                <p class="currency-value">US$ 1.800,00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Ruben Massuquetto</p>
+        <p>Todos os direitos reservados &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
